@@ -1,4 +1,4 @@
-.PHONY: letters numbers binary
+.PHONY: letters numbers binary crossed
 
 letters:
 	g++ ./letters.cpp -o ./main.o && ./main.o
@@ -8,3 +8,6 @@ numbers:
 
 binary:
 	g++ ./binary.cpp -o ./main.o -std=c++11 -w && ./main.o
+
+crossed:
+	g++ ./crossed.cpp -o ./main.o -std=c++11 && ./main.o
